@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Social Sidebar with Comments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="social-sidebar">
+        <div class="sidebar-header">
+            <h2>Social Media</h2>
+        </div>
+    <ul class="menu grid-container">
+        <!-- Images Section -->
+        <li class="menu-item grid-item">
+            <!-- Image section content -->
+            <a href="#images" class="menu-link">Images</a>
+            <div class="content" id="images-content">
+                <!-- Placeholders for images -->
+                <p>Image 1</p>
+                <div class="comment-section" data-type="image" data-id="1">
+                    <img src="SOC..jpg" alt="Image 1">
+                    <!-- Add a form for comments -->
+                    <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                    <ul class="comments-list">
+                        <!-- Add a list for views -->
+    <ul class="views-list"></ul> <!-- This is where views will be displayed -->
+                    
+                </div> 
+                
+                <p>Image 2</p>
+                <div class="comment-section" data-type="image" data-id="1">
+                    <img src="own.jpg" alt="Image 1">
+                    <!-- Add a form for comments -->
+                    <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                </div>
+                
+                <p>Image 3</p>
+                <div class="comment-section" data-type="image" data-id="1">
+                    <img src="cyber.jpg" alt="Image 1">
+                    <!-- Add a form for comments -->
+                    <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                </div>
+                
+            </div>
+        </li>
+        
+        <!-- Documents Section -->
+        <li class="menu-item grid-item">
+            <!-- Document section content -->
+            <a href="#documents" class="menu-link">Documents</a>
+            <div class="content" id="documents-content">
+                <!-- Placeholders for documents -->
+                <p>Document 1</p>
+                <div class="comment-section" data-type="document" data-id="1">
+                    <a href="largepreview.docs">Open Document 1</a>
+                     <!-- Add a form for comments -->
+                    <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                    <ul class="comments-list">
+                </div>
+                <p>Document 2</p>
+                <div class="comment-section" data-type="document" data-id="2">
+                    <a href="cyber.docs" target="_blank">Open Document 2</a>
+                     <!-- Add a form for comments -->
+                     <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                    <ul class="comments-list">
+                </div>
+                <p>Document 3</p>
+                <div class="comment-section" data-type="document" data-id="3">
+                    <a href="page.docs" target="_blank">Open Document 3</a>
+                     <!-- Add a form for comments -->
+                     <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                    <ul class="comments-list">
+                </div>
+            </div>
+        </li>
+        
+        <!-- Videos Section -->
+        <li class="menu-item grid-item">
+            <!-- Video section content -->
+            <a href="#videos" class="menu-link">Videos</a>
+            <div class="content" id="videos-content">
+                <!-- Placeholders for videos -->
+                <p>Video 1</p><div class="comment-section" data-type="video" data-id="3">
+                    <a href="seconds.mkv" target="_blank">Play video</a>
+                     <!-- Add a form for comments -->
+                     <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                    <ul class="comments-list">
+                </div>
+                <p>Video 2</p><div class="comment-section" data-type="video" data-id="2">
+                    <a href="seconds.mkv" target="_blank">Play video</a>
+                     <!-- Add a form for comments -->
+                     <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                    <ul class="comments-list">
+                </div>
+                <p>Video 3</p><div class="comment-section" data-type="video" data-id="3">
+                    <a href="seconds.mkv" target="_blank">Play video</a>
+                     <!-- Add a form for comments -->
+                     <form class="comment-form">
+                        <input type="text" placeholder="Add a comment..." class="comment-input">
+                        <button type="submit">Post Comment</button>
+                    </form>
+                    <ul class="comments-list"></ul> <!-- This is where comments will be displayed -->
+                    <ul class="comments-list">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script src="script.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Attach event listeners to each comment form
+        document.querySelectorAll('.comment-form').forEach(form => {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent form from submitting traditionally
+                
+                const commentInput = this.querySelector('.comment-input'); // Find the comment input within this form
+                const commentList = this.nextElementSibling; // Assuming the comments list directly follows the form
+                
+                if (commentInput.value.trim()) { // Check if the comment is not just empty spaces
+                    const li = document.createElement('li'); // Create a new list item for the comment
+                    li.textContent = commentInput.value; // Set its text to the comment input's value
+    
+                    const likeButton = document.createElement('button'); // Create a like button
+                    likeButton.textContent = 'Like'; // Initial like button text
+                    likeButton.classList.add('like-button'); // Add a class for styling if needed
+                    likeButton.onclick = function() { // Toggle like/unlike on click
+                        if (this.textContent === 'Like') {
+                            this.textContent = 'Liked';
+                        } else {
+                            this.textContent = 'Like';
+                        }
+                    };
+                    
+                    li.appendChild(likeButton); // Append the like button to the comment list item
+                    commentList.appendChild(li); // Append the new list item to the comments list
+                    
+                    commentInput.value = ''; // Clear the comment input
+                }
+            });
+        });
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var likeButtons = document.querySelectorAll('.like-button');
+        
+            likeButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var likeCount = this.querySelector('.like-count');
+                    var count = parseInt(likeCount.textContent, 10);
+                    likeCount.textContent = count + 1; // Increment the like count
+                });
+            });
+        });
+        </script>
+        
+    
+</body>
+</html>
+

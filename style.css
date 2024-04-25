@@ -1,0 +1,304 @@
+/* General reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    min-height: 100vh;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.logo_content .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav_list {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.nav_list a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.nav_list a:hover {
+    background-color: #575757;
+}
+
+.nav_list i {
+    margin-right: 10px;
+}
+
+/* Content area styles */
+.home_content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #eee;
+}
+
+.home_content .text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Search input styles */
+#searchInput {
+    margin: 20px 0;
+    padding: 10px;
+    width: calc(100% - 40px); /* Adjusts for padding */
+    border: none;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .home_content {
+        margin-left: 0;
+    }
+
+    .nav_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav_list a {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav_list i {
+        margin: 0 0 10px 0;
+    }
+}
+
+/* Active state for sidebar */
+.sidebar.active {
+    left: -250px; /* Adjusts the position to hide the sidebar */
+    transition: left 0.3s ease;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three columns of equal width */
+    gap: 20px; /* Space between columns */
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar-header h2 {
+    text-align: center;
+}
+
+.comment-form {
+    margin-top: 10px;
+}
+
+.comments-list {
+    margin-top: 10px;
+}
+.content {
+    width: 80%; /* Adjusts the width of the content container */
+    margin: 0 auto; /* Centers the content on the page */
+    padding: 20px; /* Adds some padding around the content for spacing */
+  }
+  
+  .comment-section {
+    margin-bottom: 30px; /* Adds space between each image section */
+    background-color: #f9f9f9; /* Gives a light background color to each section for differentiation */
+    padding: 10px; /* Adds padding inside each section for spacing */
+    border-radius: 8px; /* Rounds the corners of each section */
+  }
+  
+  .comment-section img {
+    width: 100%; /* Makes the image responsive, adjusting its width to 100% of its parent container */
+    max-width: 600px; /* Sets a maximum width to prevent the image from being too large */
+    height: auto; /* Adjusts the height automatically to maintain the aspect ratio */
+    display: block; /* Displays the image as a block to center it */
+    margin: 0 auto; /* Centers the image within its container */
+  }
+  
+  .comment-form {
+    display: flex; /* Uses flexbox to align form elements nicely */
+    margin-top: 10px; /* Adds some space between the image and the comment form */
+  }
+  
+  .comment-input {
+    flex-grow: 1; /* Allows the input to grow and fill the available space */
+    margin-right: 10px; /* Adds some space between the input and the submit button */
+  }
+  
+  .comments-list {
+    list-style-type: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes padding from the list */
+    margin-top: 10px; /* Adds some space above the comments list */
+  }
+  /* CSS for Stylish Fonts and Colors */
+
+/* Style for sidebar header */
+.sidebar-header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* Adjust the weight as necessary */
+    color: #007bff; /* Bright blue for high visibility */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+/* Style for main headings */
+.menu-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500; /* Semi-bold */
+    font-size: 18px; /* Adjust size as necessary */
+    color: #dc3545; /* Vibrant red */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Makes the link fill the available horizontal space */
+    margin: 10px 0; /* Adds some space around the link */
+    padding: 10px; /* Padding inside the link */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 5px; /* Rounded corners for a smoother look */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.menu-link:hover {
+    background-color: #e2e6ea; /* Darker background on hover */
+    color: #c82333; /* Darker text color on hover */
+}
+
+/* Style for subheadings */
+.content p, .comment-section a {
+    font-family: 'Montserrat', sans-serif;
+    color: #28a745; /* Green color for a lively look */
+    font-weight: 400; /* Regular weight */
+    margin: 5px 0; /* Adds space around the subheading */
+}
+
+.comment-section a {
+    text-decoration: underline; /* Underline links for clarity */
+}
+
+/* Additional hover effect for links */
+.comment-section a:hover {
+    color: #218838; /* Darker green on hover */
+}
+.comments-list {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
+.comment {
+    background-color: #f0f0f0; /* Light grey background */
+    margin-bottom: 10px; /* Space between comments */
+    padding: 10px; /* Padding inside the comment */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.comment-text {
+    margin: 0; /* Removes default margin */
+}
+
+.comment-author {
+    font-weight: bold; /* Makes the author name bold */
+}
+
+.like-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    padding: 5px 10px; /* Padding inside the button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Removes underline from text */
+    display: inline-block; /* Allows setting dimensions */
+    font-size: 16px; /* Text size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Changes cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.like-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.like-count {
+    margin-left: 5px; /* Space between "Like" text and count */
+}
+.comment-section {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comments-list, .views-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments-list li, .views-list li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.comments-list li:last-child, .views-list li:last-child {
+    border: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
